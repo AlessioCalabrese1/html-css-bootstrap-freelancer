@@ -12,11 +12,95 @@ header{
     border-radius: 50%;
     width: 20%;
 }
-.about{
+#about{
     color: white;
     background-color: #1abc9c;
 }
 .bottone{
     color: white;
-    border: 1px solid black;
+    border: 1px solid white;
+}
+.avatar img{
+    width: 30%;
+}
+.star{
+    margin: 5px auto;
+    max-width: 200px;
+    min-width: 100%;
+}
+.star::after, .star::before{
+    content: '';
+    display: inline-block;
+    width: 10%;
+    height: 3px;
+    background-color: white;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+
+#portfolio .star{
+    color: black;
+}
+#portfolio .star::after, #portfolio .star::before{
+    background-color: black;
+}
+
+.social{
+    background-color: #3a546d;
+}
+
+.social .row div{
+    color: white;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons-container{
+    width: 35px;
+    height: 35px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.social a{
+    text-decoration: none;
+    color: #1abc9c;
+}
+
+.color-link{
+    color: white;
+}
+
+.copyright{
+    background-color: #2c3e50;
+    color: white;
+}
+
+#contact .star::after, #contact .star::before{
+    background-color: black;
+}
+
+form input, form textarea{
+    border: 0;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+form input{
+    height: 50px;
+}
+.color-button{
+    background-color: #1abc9c;
+    border: 0;
+}
+
+
+main{
+    margin-top: 56px;
 }

@@ -8,28 +8,53 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <header>
+    <header class="fixed-top">
         <div class="container">
             <div class="row">
-                header
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="fw-bold navbar-brand color-link" href="#">START BOOTSTRAP</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="color-link nav-link" aria-current="page" href="#portfolio">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="color-link nav-link" href="#about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="color-link nav-link" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="container-fluid py-4 avatar">
-            <div class="conatiner">
+        <section class="py-4 avatar">
+            <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <img class="col-4" src="./img/avatar.svg" alt="avatar">
+                        <img src="./img/avatar.svg" alt="avatar">
                         <h1 class="col-8 mx-auto">START BOOTSTRAP</h1>
-                        <div class="row justify-content-center">
-                            ICON
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
                         </div>
                     </div>
 
@@ -41,10 +66,12 @@
 
         </section>
 
-        <section class="container py-4 portfolio">
+        <section class="container py-4" id="portfolio">
             <div class="row">
                 <h3 class="text-center">PORTFOLIO</h3>
-                ICON
+                <div class="star text-center">
+                    <i class="fa-solid fa-star"></i>
+                </div>
             </div>
 
             <div class="row row-cols-md-2 row-cols-lg-3">
@@ -74,12 +101,14 @@
             </div>
         </section>
 
-        <section class="container-fluid py-4 about">
+        <section class="container-fluid py-4" id="about">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-10">
                         <h3 class="text-center">ABOUT</h3>
-                        ICON
+                        <div class="star text-center">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
 
                         <div class="row row-cols-md-2">
                             <div class="col-12 my-3">
@@ -105,14 +134,71 @@
 
         </section>
 
-        <section class="container py-4 contact-me">
-            CONTACT ME
+        <section class="container py-4" id="contact">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <h3 class="text-center">ABOUT</h3>
+                    <div class="star text-center">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <form>
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email Address">
+                        <input type="number" placeholder="Phone Number">
+                        <textarea name="Message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        <button type="submit" class="btn btn-secondary color-button">Send</button>
+                    </form>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <section></section>
+        <section class="social">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 text-center my-3">
+                        LOCATION <br>
+                        2215 John Daniel Drive Clark, MO 54243
+                    </div>
+
+                    <div class="col-12 col-md-4 text-center my-3">
+                        AROUND THE WEB<br>
+                        <div class="social-icons">
+                            <div class="icons-container">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <div class="icons-container">
+                                <i class="fa-brands fa-google-plus-g"></i>
+                            </div>
+                            <div class="icons-container">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div class="icons-container">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 text-center my-3">
+                        ABOUT FREELANCER<br>
+                        Freelance is a free to use, open source Bootstrap theme created by <a href="#">Start
+                            Bootstrap</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="copyright text-center py-4">
+            Copyright Your Website 2019
+        </section>
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
